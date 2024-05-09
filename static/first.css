@@ -1,0 +1,77 @@
+body {
+    background-image: url('/static/img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    text-align: left;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+form {
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    padding: 15px;
+    border-radius: 0;
+}
+
+input[type="number"],
+input[type="radio"],
+select {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+input[type="number"]:focus,
+input[type="radio"]:focus,
+select:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    background-color: rgb(5, 14, 14);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(0, 102, 102);
+}
+
+label {
+    font-size: 18px;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}

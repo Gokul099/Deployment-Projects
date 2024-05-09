@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS Tech</title>
+    <!-- Link to CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="static/pred.css">
+</head>
+<body>
+
+    <!-- Website Title -->
+    <div class="container">
+        <!-- Load the logo image -->
+        <img src="static/OIP.jpeg" alt="GS Tech Logo" class="logo">
+        <!-- Heading -->
+        <h2 class='container-heading'><span class="heading_font">GS Tech</span></h2>
+        <!-- Description -->
+        <div class='description'>
+            <p>Heart disease prediction</p>
+        </div>
+    </div>
+
+    <!-- Result -->
+    <div class="results">
+        {% if prediction==1 %}
+            <!-- Display if prediction is 1 -->
+            <h1>Prediction: <span class='danger'>You have Chances of Heart Disease.</span></h1>
+        {% elif prediction==0 %}
+            <!-- Display if prediction is 0 -->
+            <h1>Prediction: <span class='safe'> You DON'T have chances of Heart Disease.</span></h1>
+        {% endif %}
+    </div>
+
+</body>
+</html>
